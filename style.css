@@ -1,0 +1,102 @@
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+.item{
+  width: 50px;
+  height: 50px;
+  border: 2px solid yellowgreen;
+}
+
+/*  above are the testing version  */
+
+
+/* justin part */
+.item-name-j{
+  text-align: center;
+  grid-row: 1 / span 1;
+  grid-column: 1 / 3;
+}
+
+.item-pic-j{
+  grid-row: 1 / span 1;
+  grid-column: 4 / 7;
+}
+
+.item-info-j{
+  grid-row: 1 / span 1;
+  grid-column: 7 / 11;
+}
+
+.item-animation-j{
+  grid-row: 1 / span 1;
+  grid-column: 11 / 13;
+}
+
+/* morris-part */
+.item-pic-m {
+  grid-area: 2 / 4 / 3 / 7;
+}
+
+.item-name-m{
+  grid-area: 2 / 1 / 3 / 4; 
+}
+
+.item-info-m{
+  grid-area: 2 / 7 / 3 / 11; ;
+}
+
+.item-animation-m{
+  grid-area: 2 / 11 / 3 / 13;
+}
+
+/* Victor part */
+.item-name-v{
+  grid-area: 3/1/4/3;
+}
+
+.item-pic-v{
+  grid-area: 3/3/4/7;
+}
+
+.item-info-v{
+  grid-area:3/7/4/11;
+
+}
+
+.item-animation-v{
+  grid-area: 3/11/4/13;
+}
+
+
+
+/* Yui part */
+.item-name-y{
+  grid-area: 4/1/5/3;
+}
+
+.item-pic-y{
+  grid-area: 4/3/5/7;
+}
+
+.item-info-y{
+  grid-area:4/7/5/11;
+
+}
+
+.item-animation-y{
+  grid-area: 4/11/5/13;
+}
